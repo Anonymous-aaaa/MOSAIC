@@ -79,5 +79,7 @@
 
   ---
 
- ![Configuration examples](ReadMeImages/demo.png)
+
+
+![Configuration examples](ReadMeImages/demo.png)
 
