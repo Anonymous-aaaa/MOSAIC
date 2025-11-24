@@ -63,7 +63,7 @@
   Select the optimization strategy:
 
   #define case1_default                    // Baseline
-  //#define case2_samos                    // SAMOS
+  //#define case2_samos                    // SAMOS Travel Time mapping
   //#define case3_affiliatedordering       // Affiliated Ordering
   //#define case4_seperratedordering       // Separated Ordering
   //#define case5_COMBO1                   // Combo-1
