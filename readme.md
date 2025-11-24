@@ -6,8 +6,9 @@
 
 
   > **Note**: This anonymous repository will be ready before Nov. 24 (authors need to remove personal information for double-blind review).
-  > README may be continuously updated to serve as a tutorial.
   > If accepted, the codes will be open-source for the public.
+  > README may be continuously updated to serve as a tutorial.
+
 
   ---
 
