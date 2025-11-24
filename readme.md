@@ -26,12 +26,12 @@
   #define NOCSIZEMC8_8X8
   #define LLM_TOKEN_SIZE 1
   #define case1_default
-
-  This runs an attention matrix in an 8×8 NoC with 8-token (sentence-level) using the baseline configuration.
   ```
-  ```cpp
-  ---
+  This runs an attention matrix in an 8×8 NoC with 8-token (sentence-level) using the baseline configuration.
+
+
   Configuration Options
+  ```cpp
 
   1. Workload Selection
 
