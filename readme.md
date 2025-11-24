@@ -25,7 +25,6 @@
 
   ```cpp
   #define AUTHORLLMSwitchON
-  //#define AUTHORLLMSwitchON
 
   #define NOCSIZEMC8_8X8
   #define LLM_TOKEN_SIZE 1
