@@ -70,7 +70,6 @@
   //#define case10_MOSAIC2                 // MOSAIC-2
 
   ---
- ![Configuration examples](ReadMeImages/demo.png)
 
 
   Performance Note
@@ -79,3 +78,6 @@
   - 128 tokens: ~20 minutes on Intel Core i7-10700
 
   ---
+
+ ![Configuration examples](ReadMeImages/demo.png)
+
