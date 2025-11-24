@@ -3,7 +3,7 @@
 
 # Anonymous Repository for Double-Blind Review
 
-![Configuration examples](ReadMeImages/demo.png)
+
 
   > **Note**: This anonymous repository will be ready before Nov. 24 (authors need to remove personal information for double-blind review).
   > README may be continuously updated to serve as a tutorial.
@@ -18,7 +18,7 @@
   ---
 
   ## Configuration Guide
-
+![Configuration examples](ReadMeImages/demo.png)
   To run different configurations, comment/uncomment the settings in `parameters.hpp`, then build and run.
 
   ### Example Configuration
