@@ -1,14 +1,8 @@
-
-
-
-# Anonymous Repository for Double-Blind Review
-
-
+● # Anonymous Repository for Double-Blind Review
 
   > **Note**: This anonymous repository will be ready before Nov. 24 (authors need to remove personal information for double-blind review).
   > If accepted, the codes will be open-source for the public.
   > README may be continuously updated to serve as a tutorial.
-
 
   ---
 
@@ -19,7 +13,9 @@
   ---
 
   ## Configuration Guide
-![Configuration examples](ReadMeImages/demo.png)
+
+  ![Configuration examples](ReadMeImages/demo.png)
+
   To run different configurations, comment/uncomment the settings in `parameters.hpp`, then build and run.
 
   ### Example Configuration
@@ -50,7 +46,7 @@
   //#define NOCSIZEMC2_4X4      //   4×4 mesh  
   #define NOCSIZEMC8_8X8       //   8×8 mesh  
   //#define NOCSIZEMC32_16X16   //  16×16 mesh 
-  //#define NOCSIZEMC128_32X32  //   32×32 mesh  
+  //#define NOCSIZEMC128_32X32  //   32×32 mesh
 
   3. Token Length Options
 
@@ -75,11 +71,3 @@
   //#define case10_MOSAIC2                 // MOSAIC-2
 
   ---
- 
-
-  ---
-
-
-
-
-
