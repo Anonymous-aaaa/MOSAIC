@@ -1,44 +1,78 @@
-This anonymous repo will be ready before Nov.24 (authors need to remove personal information for double blind review).  Readme may be continuously updated to serve as a tutorial.
-If it is accepted, the codes will be open-source for the public.
+# Anonymous Repository for Double-Blind Review
 
-This work was developed with the Eclipse IDE.
+  > **Note**: This anonymous repository will be ready before Nov. 24 (authors need to remove personal information for double-blind review).
+  > README may be continuously updated to serve as a tutorial.
+  > If accepted, the codes will be open-source for the public.
 
-To run different configurations:  comment the configurations in parameters.hpp and build&run.
+  ---
 
+  ## Development Environment
 
-For example:
-#define AUTHORLLMSwitchON  
-//#define AUTHORLLMSwitchON  
+  This work was developed with the **Eclipse IDE**.
 
-#define NOCSIZEMC8_8X8 
-#define LLM_TOKEN_SIZE 1 
-#define case1_default
-is to run an  attention matrix  in a 8x8 NoC with  8-token (sentence-level) and the configuration is baseline.
+  ---
 
-The other options are the attention matrix or LeNet
-#define AUTHORLLMSwitchON  
-//#define AUTHORLLMSwitchON  
+  ## Configuration Guide
 
-The other options are  different NoC sizes
-//#define NOCSIZEMC2_4X4      // 2 MCs in 4x4 mesh (base tile pattern)
-#define NOCSIZEMC8_8X8      // 8 MCs in 8x8 mesh (2x2 tiles)
-//#define NOCSIZEMC32_16X16   // 32 MCs in 16x16 mesh (4x4 tiles)
-//#define NOCSIZEMC128_32X32  // 128 MCs in 32x32 mesh (8x8 tiles)
+  To run different configurations, comment/uncomment the settings in `parameters.hpp`, then build and run.
 
+  ### Example Configuration
 
-The other options are  different token length, if  #define AUTHORLLMSwitchON   is not commented. 
-#define LLM_TOKEN_SIZE 1  // 8tokesn  ~50 seconds on Intel 10700.
-//#define LLM_TOKEN_SIZE 2    //128tokens . This takes more than ~20minutes.
+  ```cpp
+  #define AUTHORLLMSwitchON
+  //#define AUTHORLLMSwitchON
 
+  #define NOCSIZEMC8_8X8
+  #define LLM_TOKEN_SIZE 1
+  #define case1_default
 
-The other options are  different configurations.
-#define case1_default
-//#define case2_samos
-//#define case3_affiliatedordering
-//#define case4_seperratedordering
-//#define case5_COMBO1
-//#define case6_COMBO2
-//#define case7_FireAdvance
-//#define case8_BinarySwitch
-//#define case9_MOSAIC1
-//#define case10_MOSAIC2
+  This runs an attention matrix in an 8×8 NoC with 8-token (sentence-level) using the baseline configuration.
+
+  ---
+  Configuration Options
+
+  1. Workload Selection
+
+  Choose between attention matrix or LeNet:
+
+  #define AUTHORLLMSwitchON   // Enable LLM attention workload
+  //#define AUTHORLLMSwitchON  // Disable for LeNet workload
+
+  2. NoC Size Options
+
+  Select the mesh size and memory controller configuration:
+
+  //#define NOCSIZEMC2_4X4      // 2 MCs in 4×4 mesh (base tile pattern)
+  #define NOCSIZEMC8_8X8       // 8 MCs in 8×8 mesh (2×2 tiles)
+  //#define NOCSIZEMC32_16X16   // 32 MCs in 16×16 mesh (4×4 tiles)
+  //#define NOCSIZEMC128_32X32  // 128 MCs in 32×32 mesh (8×8 tiles)
+
+  3. Token Length Options
+
+  Note: Only applicable when #define AUTHORLLMSwitchON is enabled.
+
+  #define LLM_TOKEN_SIZE 1     // 8 tokens (~50 seconds on Intel 10700)
+  //#define LLM_TOKEN_SIZE 2    // 128 tokens (~20+ minutes)
+
+  4. Optimization Configurations
+
+  Select the optimization strategy:
+
+  #define case1_default                    // Baseline
+  //#define case2_samos                    // SAMOS
+  //#define case3_affiliatedordering       // Affiliated Ordering
+  //#define case4_seperratedordering       // Separated Ordering
+  //#define case5_COMBO1                   // Combo-1
+  //#define case6_COMBO2                   // Combo-2
+  //#define case7_FireAdvance              // Fire Advance
+  //#define case8_BinarySwitch             // Binary Switch
+  //#define case9_MOSAIC1                  // MOSAIC-1
+  //#define case10_MOSAIC2                 // MOSAIC-2
+
+  ---
+  Performance Note
+
+  - 8 tokens: ~50 seconds on Intel Core i7-10700
+  - 128 tokens: ~20 minutes on Intel Core i7-10700
+
+  ---
