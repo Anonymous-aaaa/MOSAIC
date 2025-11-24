@@ -28,7 +28,7 @@
   #define case1_default
 
   This runs an attention matrix in an 8×8 NoC with 8-token (sentence-level) using the baseline configuration.
-  ```cpp
+  ```
   ```cpp
   ---
   Configuration Options
