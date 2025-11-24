@@ -1,4 +1,4 @@
-● # Anonymous Repository for Double-Blind Review
+ # Anonymous Repository for Double-Blind Review
 
   > **Note**: This anonymous repository will be ready before Nov. 24 (authors need to remove personal information for double-blind review).
   > If accepted, the codes will be open-source for the public.
@@ -28,7 +28,8 @@
   #define case1_default
 
   This runs an attention matrix in an 8×8 NoC with 8-token (sentence-level) using the baseline configuration.
-
+  ```cpp
+  ```cpp
   ---
   Configuration Options
 
