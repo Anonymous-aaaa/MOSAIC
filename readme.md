@@ -46,10 +46,10 @@
 
   Select the mesh size and memory controller configuration:
 
-  //#define NOCSIZEMC2_4X4      // 2 MCs in 4×4 mesh (base tile pattern)
-  #define NOCSIZEMC8_8X8       // 8 MCs in 8×8 mesh (2×2 tiles)
-  //#define NOCSIZEMC32_16X16   // 32 MCs in 16×16 mesh (4×4 tiles)
-  //#define NOCSIZEMC128_32X32  // 128 MCs in 32×32 mesh (8×8 tiles)
+  //#define NOCSIZEMC2_4X4      //   4×4 mesh  
+  #define NOCSIZEMC8_8X8       //   8×8 mesh  
+  //#define NOCSIZEMC32_16X16   //  16×16 mesh 
+  //#define NOCSIZEMC128_32X32  //   32×32 mesh  
 
   3. Token Length Options
 
@@ -74,12 +74,7 @@
   //#define case10_MOSAIC2                 // MOSAIC-2
 
   ---
-
-
-  Performance Note
-
-  - 8 tokens: ~50 seconds on Intel Core i7-10700
-  - 128 tokens: ~20 minutes on Intel Core i7-10700
+ 
 
   ---
 
