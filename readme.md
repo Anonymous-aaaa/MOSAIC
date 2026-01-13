@@ -1,4 +1,4 @@
-Updates 2025-12-27: A detailed hands-on tutorial to run the code and reproduce the results will come out around the New Year Holidays (before Jan 10th.)
+Updates 2026-01-13: A detailed hands-on tutorial is available now.
  
  # Anonymous Repository for Double-Blind Review
 
