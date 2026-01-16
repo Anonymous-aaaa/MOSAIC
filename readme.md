@@ -1,4 +1,4 @@
-Updates 2026-01-13: A detailed hands-on tutorial is available now.
+Updates 2026-01-13: A detailed hands-on tutorial is available (in Detailed-ReadMe.pdf) now. 
  
  # Anonymous Repository for Double-Blind Review
 
